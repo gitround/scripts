@@ -1,0 +1,128 @@
+## NANO
+alias n="sudo nano"
+alias nalias="sudo nano ~/dots_2.0/alias"
+alias nano-alias="sudo nano ~/dots_2.0/alias"
+
+
+## Starting VMs/CTs
+alias sshvm="ssh acer@vm.lan"
+alias sshvm.x="ssh acer@vm.lan exec"
+## GREP color
+alias grep='grep --color=auto'
+
+
+## Working with .zshrc
+alias nzsh="sudo nano .zshrc"
+alias szsh="source ~/.zshrc"
+alias sbash="source ~/.bashrc"
+alias nbash="sudo nano ~/.bashrc"
+
+
+alias sourcezsh="source ~/.zshrc"
+
+
+## SSH CONNECTION SHORTHAND/SHORTCUTS
+alias sshprox="ssh root@prox.lan"
+alias sshprox.x="ssh root@prox.lan exec"
+alias sshts="ssh root@ts.lan"
+alias sshm700="ssh root@m700.lan"
+alias sshm700.x="ssh root@m700.lan exec"
+alias sshomv="ssh root@omv.lan"
+alias sshpi99="ssh pi@10.0.0.99"
+alias sshpihole99="ssh pi@10.0.0.99"
+alias denpc="10.0.0.64"
+
+
+alias sshtest="ssh root@10.0.0.205"
+alias sshtest.x="ssh root@10.0.0.205 exec"
+
+# SSH RELATED COMMANDS
+alias .x="exec"
+
+##  SUDO STUFF
+alias s="sudo"
+alias nano="sudo nano"
+alias ssu="sudo su"
+alias chmod="sudo chmod"
+alias npm='sudo npm'
+alias chmod='sudo chmod'
+alias chmodx='sudo chmod +x'
+alias snap="sudo snap"
+alias s!="sudo !!"
+##  DEALING WITH APT OR PIP
+alias apt="sudo apt"
+alias upup="sudo apt update && sudo apt full-upgrade -y"
+alias apti="sudo apt install"
+alias apt+="sudo apt install"
+alias apt-="sudo apt remove"
+alias apt--="sudo apt autoremove"
+alias inst="sudo apt install"
+alias up="apt update"
+
+alias pip="pip3"
+
+
+##  NMAP OR OTHER NET SCAN PROGRAMS
+alias nmap="sudo nmap"
+alias nmap.lan="sudo nmap 10.0.0.0/23"
+alias nmap23="sudo nmap 10.0.0.0/23"
+alias nmapping="sudo nmap -sn 10.0.0.0/23"
+alias nmap-sn="sudo nmap -sn 10.0.0.0/23"
+alias nmapl="sudo nmap 10.0.0.0/23"
+alias nmapF="sudo nmap -F 10.0.0.0/23"
+alias nmapfast="sudo nmap -F 10.0.0.0/23"
+
+alias arp-scan="sudo arp-scan -l"
+
+##  GENERAL SHORTHAND/SHORTCUT STUFF
+
+alias n="sudo nano"
+alias hn="hostname"
+alias mv='mv -v'
+
+## MKDIR
+alias mkdir='mkdir -pv'
+
+
+# LS STUFF
+# Print file/folder info (Group/owner/perms/size)
+alias l="ls $LS_OPTIONS -lA"
+alias lsinfo="ls $LS_OPTIONS -lA"
+alias ls-info="ls $LS_OPTIONS -lA"
+
+## CP
+# Recursive and v shows you what was copied where ex. (foo --> bar)
+alias cp='cp -Rv'
+
+## Moving between DIR/FILES
+# See history of DIR visited
+alias d="dirs -v"
+alias x="exit"
+
+## SHORTCUTS FOR OTHER TOOLS
+
+# YABS bench script (NEED FIO FIRST)
+alias bm="bm-req && curl -sL yabs.sh | bash"
+# INSTALL FIO FOR YABS BENCH SC TO WORK
+alias bm-req="sudo apt install fio -y"
+
+# PRINTS PROGRESS AND TIME LEFT.
+# USE WITH COMMANDS THAT WILL TAKE AWHILE.
+alias prog="| progress  -m  $!"
+
+
+## Docker stuff
+alias dr="docker run"
+alias dps="docker ps"
+alias dc="docker container"
+alias di="docker image"
+
+## GIT
+alias gcm="git commit -a -m '..'"
+
+
+alias myip="curl http://ipecho.net/plain; echo"
+alias updatealias="cd && ./dots_2.0/scripts/shell_setup/add-alias_ohmyshell.sh"
+
+alias test12="echo $1 $2 $3=$1$2"
+alias aliasadd="echo alias $1=\"${2}\"" >> ~/alias
